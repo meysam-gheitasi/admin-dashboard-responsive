@@ -5,9 +5,9 @@ export default function UserSide({ user }) {
     console.log(user)
 
   return (
-    <div className="flex items-center gap-5">
+    <div className="flex-start !items-center gap-5">
         <Image className="rounded-full object-contain" alt="Users Image" src={user.img || user.image } width={50} height={50} />
-        <div className="flex-center flex-col">
+        <div className="flex-start flex-col">
             <span className="text-sm font-medium">
                 {
                     user.name
