@@ -1,5 +1,8 @@
+// DATA MENUS TITLES,ICONS...
+import SIDEBAR_MENUS from '@/app/data/constants'
+
 export default function SidebarD() {
   return (
-    <div>SidebarD</div>
+    <div className="sticky top-10"></div>
   )
 }
