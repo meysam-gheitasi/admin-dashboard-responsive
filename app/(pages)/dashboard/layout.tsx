@@ -8,13 +8,9 @@ export default function layout({ children }) {
         <div className="flex-1 bg-slate-800 p-5 min-h-screen">
             <SidebarD />
         </div>
-        <div className="">
-            <div>
+        <div className="flex-between flex-col flex-4 p-5">
             <NavbarD />
-            </div>
-            <div className="">
-                {children}
-            </div>
+            {children}
         </div>
     </div>
   )
