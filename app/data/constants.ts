@@ -1,3 +1,15 @@
+export const USERS_INFO = [
+    {
+        title: "Username",
+        list: [
+            {
+                title: 'Administrator',
+                image: 'images/noavatar.png',
+                name: 'Test',
+            }
+        ]
+    }
+]
 export const SIDEBAR_MENUS = [
     {
         title: "Pages",
