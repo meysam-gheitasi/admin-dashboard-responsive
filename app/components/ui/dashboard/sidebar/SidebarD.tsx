@@ -65,39 +65,24 @@ export default function SidebarD() {
         },
       ],
     },
-    {
-      title: "User",
-      list: [
-        {
-          title: "Settings",
-          path: "/dashboard/settings",
-          icon: <MdOutlineSettings />,
-        },
-        {
-          title: "Help",
-          path: "/dashboard/help",
-          icon: <MdHelpCenter />,
-        },
-      ],
-    },
   ];
 
   return (
     <div className="flex-start flex-col gap-y-5 sticky top-10">
-      <div>
+      <div className='ps-1'>
         {USERS_INFO.map(item => (
           <UserSide key={item.title} user={item} />
         ))}
       </div>
-      <ul className='flex-start flex-col gap-y-5'>
+      <ul className='flex-start flex-col'>
         {menuItems.map(items => (
-          <li className='flex-start flex-col gap-y-5' key={items.title}>
-            <span className="flex-start text-xs pt-5 pb-1">
+          <li className='flex-start flex-col' key={items.title}>
+            <span className="flex-start text-xs pt-5 pb-2 ps-1">
               {items.title}
             </span>
-            {items.list.map(item => (
-              <MenuLink item={item} key={item.title} />
-            ))}
+              {items.list.map(item => (
+                <MenuLink item={item} key={item.title} />
+              ))}
           </li>
         ))}
       </ul>
