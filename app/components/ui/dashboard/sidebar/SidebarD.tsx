@@ -1,6 +1,6 @@
 // DATA MENUS TITLES,ICONS...
-import { USERS_INFO } from '@/app/data/constants'
-import UserSide from './UserSide'
+import { USERS_INFO } from '@/app/data/constants';
+import UserSide from './UserSide';
 import MenuLink from './MenuLink';
 
 import {
@@ -68,7 +68,7 @@ export default function SidebarD() {
   ];
 
   return (
-    <div className="flex-start flex-col gap-y-5 sticky top-10">
+    <div className="flex-start flex-col gap-y-5 bg-slate-800 p-5 min-h-screen sticky top-10">
       <div className='ps-1'>
         {USERS_INFO.map(item => (
           <UserSide key={item.title} user={item} />
