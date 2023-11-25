@@ -20,11 +20,9 @@ export default function NavbarD() {
           {pathname.split('/').pop()}
         </h4>
         <div className="flex-center gap-x-5">
-          <div className="flex-center bg-gray-900 px-1 py-2 rounded-md">
+          <div className="flex-center bg-gray-900 px-1 py-2 rounded-md focus-within:border-blue-500 focus-within:ring focus-within:ring-blue-200 focus-within:ring-opacity-50">
             <input className="w-full rounded-sm bg-transparent outline-none" type="text" placeholder=" Search..." />
-            <MdSearch size={30} />
-            <span className="flex-center absolute top-0 right-0 p-1 h-full hover:cursor-pointer rounded-r-sm bg-slate-900">
-            </span>
+            <MdSearch size={30} className="cursor-pointer" />
           </div>
           <div className="flex-start gap-x-5">
             <Link href={''}>
