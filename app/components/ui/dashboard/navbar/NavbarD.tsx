@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link";
 import { usePathname } from "next/navigation"
 import {
   MdNotifications,
@@ -25,10 +26,16 @@ export default function NavbarD() {
             <span className="flex-center absolute top-0 right-0 p-1 h-full hover:cursor-pointer rounded-r-sm bg-slate-900">
             </span>
           </div>
-          <div className="flex-start">
-            <MdOutlineChat size={20} />
-            <MdNotifications size={20} />
-            <MdPublic size={20} />
+          <div className="flex-start gap-x-5">
+            <Link href={''}>
+              <MdOutlineChat size={20} />
+            </Link>
+            <Link href={''}>
+              <MdNotifications size={20} />
+            </Link>
+            <Link href={''}>
+              <MdPublic size={20} />
+            </Link>
           </div>
         </div>
       </div>
