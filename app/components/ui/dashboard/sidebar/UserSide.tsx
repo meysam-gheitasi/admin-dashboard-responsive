@@ -9,14 +9,10 @@ export default function UserSide({ user }) {
         <Image className="rounded-full object-contain" alt="Users Image" src={user.img || user.image } width={50} height={50} />
         <div className="flex-start flex-col">
             <span className="text-sm font-medium">
-                {
-                    user.name
-                }
+                {user.name}
             </span>
-            <span className="text-xs text-slate-400">
-                {
-                    user.title
-                }
+            <span className="text-xs text-slate-300">
+                {user.title}
             </span>
         </div>
     </div>

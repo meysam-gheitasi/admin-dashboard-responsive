@@ -10,8 +10,7 @@
 }
 
 body {
-    background-color: var(--bg);
-    color: var(--text);
+    @apply bg-gray-900 text-slate-100
 }
 
 .flex-center {
