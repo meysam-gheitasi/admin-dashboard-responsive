@@ -86,6 +86,10 @@ export default function SidebarD() {
           </li>
         ))}
       </ul>
+      <button className="flex-start !items-center gap-x-1 text-md w-56 rounded-sm py-3 ps-1 hover:bg-slate-600 hover:cursor-pointer">
+        <MdLogout />
+        Logout
+      </button>
     </div>
   )
 }
